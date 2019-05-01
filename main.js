@@ -9,7 +9,7 @@ $('.cato').hide();
 
     $.ajax({
         method: 'GET',
-        url: 'http://api.tvmaze.com/singlesearch/shows?q='+show+'',
+        url: 'https://api.tvmaze.com/singlesearch/shows?q='+show+'',
         //http://api.tvmaze.com/search/shows?q=
         success: function(item){
             $('#search').hide();
@@ -57,7 +57,7 @@ $('.cato').hide();
     
     $.ajax({
         method: 'GET',
-        url:'http://api.tvmaze.com/search/shows?q='+show+'',
+        url:'https://api.tvmaze.com/search/shows?q='+show+'',
         success: function(items){
             $('#search').hide();
             $('#temple').hide();
